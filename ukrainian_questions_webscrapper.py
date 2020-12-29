@@ -7,6 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import os
 
 import config #./conig.py, contains path, url and url_breakpoint
 # Don't really want to publish direct url to site that I have scrapped
@@ -85,7 +86,7 @@ def web_scrape():
             driver.get(driver.current_url) #wait until loaded
     
     driver.quit()
-    df.to_csv("dataset.csv")
+    df.to_csv("data/ukrainian_questions_dataset.csv")
 
 
 if __name__ == '__main__':
