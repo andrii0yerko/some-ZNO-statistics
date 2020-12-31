@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 
-import config #./conig.py, contains path, url and url_breakpoint
+import questions_webscrapper_config #./conig.py, contains path, url and url_breakpoint
 # Don't really want to publish direct url to site that I have scrapped
 
 variants = {
